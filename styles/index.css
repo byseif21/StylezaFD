@@ -1,3 +1,17 @@
+:root {
+    --primary: #2a2d45;
+    --secondary: #f27d42;
+    --accent: #6c63ff;
+    --light: #f5f5f7;
+    --dark: #1a1a1a;
+    --success: #4caf50;
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
+    --transition: all 0.3s ease;
+    --shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    --border-radius: 4px;
+}
+
 /* Hero section styles */
 .hero {
     height: 100vh;
@@ -23,11 +37,11 @@
 }
 
 .slide-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/api/placeholder/1200/800') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../asset/img/slider1.png') center/cover;
 }
 
 .slide-2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/api/placeholder/1200/800') center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../asset/img/slider2.png') center/cover;
 }
 
 .hero-content {
@@ -331,7 +345,7 @@
 .collection-img {
     flex: 1;
     min-height: 500px;
-    background: url('/api/placeholder/600/500') center/cover;
+    background: url('../asset/img/spring-collection.png') center/cover;
 }
 
 .collection-content {
@@ -515,6 +529,7 @@
 .instagram-item {
     position: relative;
     height: 200px;
+    border-radius: 10px;
     overflow: hidden;
 }
 

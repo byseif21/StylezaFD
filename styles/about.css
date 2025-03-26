@@ -1,0 +1,23 @@
+.hero-slider {
+    transform: none;
+}
+
+.slide-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../asset/img/about-001.jpeg') center/cover;
+}
+
+.products-grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 767.98px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
