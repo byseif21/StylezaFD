@@ -101,6 +101,23 @@
     transition: all 0.3s ease;
 }
 
+@media (max-width: 760px) {
+
+    .slider-controls {
+        gap: 10px;
+    }
+
+    .slider-dot {
+        width: 7px;
+        height: 7px;
+    }
+
+    .collection-btn {
+        text-transform: none !important;
+        ;
+    }
+}
+
 .slider-dot.active {
     background-color: var(--secondary);
     transform: scale(1.2);

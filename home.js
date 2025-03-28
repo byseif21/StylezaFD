@@ -46,21 +46,29 @@ document.addEventListener('DOMContentLoaded', function () {
             mobileMenu.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
+    }
 
-        if (mobileClose) {
-            mobileClose.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        }
+    if (mobileClose) {
+        mobileClose.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        });
     }
 
     if (mobileNavToggles.length > 0) {
         mobileNavToggles.forEach(toggle => {
-            toggle.addEventListener('click', function () {
-                this.classList.toggle('active');
-                const subnav = this.nextElementSibling;
-                if (subnav) subnav.classList.toggle('active');
+            toggle.addEventListener('click', function (e) {
+                // Prevent default if it's a toggle element (chevron)
+                if (e.target.tagName === 'I' || e.target === this) {
+                    e.preventDefault();
+                }
+
+                const subnav = this.parentElement.querySelector('.mobile-submenu');
+                if (subnav) {
+                    this.querySelector('i').classList.toggle('fa-chevron-down');
+                    this.querySelector('i').classList.toggle('fa-chevron-up');
+                    subnav.classList.toggle('active');
+                }
             });
         });
     }

@@ -207,9 +207,9 @@ document.addEventListener('DOMContentLoaded', function () {
             <ul class="mobile-nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="mobile-nav-footer">
                 <div class="mobile-nav-footer-icons">

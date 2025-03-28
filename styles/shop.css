@@ -349,37 +349,6 @@
     background-color: #f9f9f9;
 }
 
-.mobile-nav-footer {
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-top: 1px solid #f1f1f1;
-}
-
-.mobile-nav-footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.mobile-nav-footer-icons a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #fff;
-    color: #333;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-nav-footer-icons a:hover {
-    background-color: #4CAF50;
-    color: #fff;
-}
-
 /* Product List Views for Mobile */
 .list-view .product-card {
     flex-direction: column !important;
